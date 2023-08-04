@@ -151,7 +151,7 @@ body{
 	background: #292b2f;
 	padding: 15px 30px;
 	color: #fff;
-	height: 240px;
+	height: 120px;
 }
 
 .header .name{
@@ -186,7 +186,7 @@ body{
 }
 
 .right_inner .li_wrap .date {
-    width: 125px;
+    width: 150px;
     color: #9153c9;
 }
 
