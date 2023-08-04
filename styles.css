@@ -120,7 +120,7 @@ body{
 }
 
 .skills .li_wrap{
-	background: #fff;
+	border: 2px solid #fff;
 }
 
 .skills .li_wrap .text,
@@ -134,6 +134,11 @@ body{
 
 .hobbies .li_wrap .icon,
 .hobbies .li_wrap .text{
+	color: #fff;
+}
+
+.skills .li_wrap .icon,
+.skills .li_wrap .text{
 	color: #fff;
 }
 
