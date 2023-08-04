@@ -67,11 +67,11 @@ body{
 
 .left .icon{
 	font-size: 20px;
-	color: #9153c9;
+	color: #434341;
 }
 
 .left .text{
-	color: #9153c9;
+	color: #434341;
 	text-transform: uppercase;
 	font-size: 13px;
 }
@@ -148,7 +148,7 @@ body{
 
 .hobbies .li_wrap:hover .icon,
 .hobbies .li_wrap:hover .text{
-	color: #9153c9;
+	color: #434341;
 }
 
 .header{
@@ -191,7 +191,7 @@ body{
 
 .right_inner .li_wrap .date {
     width: 180px;
-    color: #9153c9;
+    color: #434341;
 }
 
 .right_inner .li_wrap .info{
@@ -204,7 +204,7 @@ body{
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 2px;
-	color: #9153c9;
+	color: #434341;
 }
 
 .right_inner .li_wrap .info_com{
@@ -224,7 +224,7 @@ body{
 	left: 0;
 	width: 10px;
 	height: 10px;
-	background: #9153c9;
+	background: #434341;
 	border-radius: 50%;
 }
 
@@ -235,5 +235,5 @@ body{
 	left: 4px;
 	width: 2px;
 	height: 90%;
-	background: #9153c9;
+	background: #434341;
 }
