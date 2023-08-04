@@ -9,18 +9,18 @@
 }
 
 body{
-	background: linear-gradient(to right, #9153c9, #ffffff);
+	background: linear-gradient(to right, #6ec2c4, #ddc6ab);
 }
 
 .resume{
 	width: 800px;
-	background: #fff;
+	background: #EEEFEA;
 	margin: 25px auto;
 	display: flex;
 }
 
 .left{
-	background: #7e8085;
+	background: #6ec2c4;
 	width: 250px;
 	padding: 0 20px;
 }
@@ -49,7 +49,7 @@ body{
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	padding-bottom: 10px;
-	color: #3525af;
+	color: #016367;
 	position: relative;
 	text-align: right;
 	margin-bottom: 15px;
@@ -147,7 +147,7 @@ body{
 }
 
 .header{
-	background: #7e8085;
+	background: #6ec2c4;
 	padding: 15px 30px;
 	color: #fff;
 	height: 120px;
@@ -157,7 +157,7 @@ body{
 	font-size: 52px;
 	text-transform: uppercase;
 	font-weight: 700;
-	color: #000000;
+	color: #fff;
 }
 
 .header .role{
