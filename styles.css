@@ -9,7 +9,7 @@
 }
 
 body{
-	background: linear-gradient(to right, #9153c9, #ffffff);
+	background: #ffffff;
 }
 
 .resume{
@@ -20,7 +20,7 @@ body{
 }
 
 .left{
-	background: #292b2f;
+	background: linear-gradient(to right, #9153c9, #ffffff);
 	width: 250px;
 	padding: 0 20px;
 }
