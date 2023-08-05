@@ -1,282 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wenjin Liu's Resume</title>
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light' rel='stylesheet' type='text/css'>
-    <style>
-	    *, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
- }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wenjin Liu's Resume</title>
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <style>
+    *,
+    *:before,
+    *:after {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
 
-html
-{
-	font-size:100%;
-}
+    html {
+      font-size: 100%;
+    }
+    
+    .dashed-line {
+      border: 0.5px dashed lightgrey;
+    }
+    
+    body {
+      -webkit-font-smoothing: antialiased;
+      color: #333332;
+      font-family: Lora, serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.4;
+      text-rendering: optimizeLegibility;
+    }
 
-body
-{
-	-webkit-font-smoothing:antialiased;
-	color:#333332;
-	font-family:Lora, serif;
-	font-size:18px;
-	font-weight:400;
-	line-height:1.4;
-	text-rendering:optimizeLegibility;
-}
+    .skill-set li:hover {
+      background: #3498db;
+    }
 
-.skill-set li:hover
-{
-	background:#3498db;
-}
+    h1 {
+      color: rgba(0, 0, 0, .75);
+    }
 
-h1
-{
-	color:rgba(0,0,0,.75);
-}
+    .wrapper {
+      height: 100%;
+    }
 
-.wrapper
-{
-	height:100%;
-}
+    .left {
+      background-color: rgba(0, 0, 0, .025);
+      border-right: 1px solid rgba(0, 0, 0, .05);
+      float: right;
+      height: 100%;
+      margin-left: -1px;
+      min-width: 256px;
+      position: fixed;
+      width: 33.33%;
+    }
 
-.left
-{
-	background-color:rgba(0,0,0,.025);
-	border-right:1px solid rgba(0,0,0,.05);
-	float:right;
-	height:100%;
-	margin-left:-1px;
-	min-width:256px;
-	position:fixed;
-	width:33.33%;
-  
-}
+    .right {
+      float: right;
+      height: 100%;
+      position: relative;
+      width: 66.66%;
+    }
 
-.right
-{
-	float:right;
-	height:100%;
-	position:relative;
-	width:66.66%;
-}
+    .name-hero {
+      background: rgba(0, 0, 0, .001);
+      bottom: 0;
+      height: 290px;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 85%;
+    }
 
-
-.name-hero
-{
-	background:rgba(0,0,0,.001);
-	bottom:0;
-	height:290px;
-	left:0;
-	margin:auto;
-	position:absolute;
-	right:0;
-	top:0;
-	width:85%;
-}
-
-.me-img
+    .me-img
 {
 	background:url(https://media-exp1.licdn.com/dms/image/C4E03AQGnLq_IB_mf8Q/profile-displayphoto-shrink_400_400/0/1631022739752?e=1648684800&v=beta&t=eICUjHeH_g9GQEItmEMK1j2gCADwqfjrlccSD_5za58) no-repeat center center ;
-	background-size:100%;
-  background-position:0px;
+	background-size:50%;
+  background-position:10px;
 	border-radius:100%;
-	height:150px;
+	height:50px;
 	margin:0 auto;
 	position:relative;
-	width:150px;
+	width:50px;
 }
 
-.name-hero h1
-{
-	font-family:Open Sans, sans-serif;
-	font-size:1.5em;
-	text-align:center;
-}
+    .name-hero h1 {
+      font-family: Open Sans, sans-serif;
+      font-size: 1.5em;
+      text-align: center;
+    }
 
-.name-hero h1 em
-{
-	color:rgba(0,0,0,.3);
-	font-style:normal;
-	font-weight:700;
-}
+    .name-hero h1 em {
+      color: rgba(0, 0, 0, .3);
+      font-style: normal;
+      font-weight: 700;
+    }
 
-.name-hero p
-{
-	color:rgba(0,0,0,.75);
-	font-size:.75em;
-	line-height:1.5;
-	margin:0 8px 0 0;
-	text-align:center;
-}
+    .name-hero p {
+      color: rgba(0, 0, 0, .75);
+      font-size: .75em;
+      line-height: 1.5;
+      margin: 0 8px 0 0;
+      text-align: center;
+    }
 
-.name-hero .name-text
-{
-	margin:0 auto;
-	width:85%;
-}
+    .name-hero .name-text {
+      margin: 0 auto;
+      width: 85%;
+    }
 
-.inner
-{
-	margin:0 auto;
-	max-width:975px;
-	padding:3em;
-}
+    .inner {
+      margin: 0 auto;
+      max-width: 975px;
+      padding: 3em;
+    }
 
-.inner h1
-{
-	font-size:1.75em;
-}
+    .inner h1 {
+      font-size: 1.75em;
+    }
 
-.inner p
-{
-	color:rgba(0,0,0,.5);
-}
+    .inner p {
+      color: rgba(0, 0, 0, .5);
+    }
 
-.inner p em
-{
-	color:rgba(0,0,0,1);
-	font-style:normal;
-}
+    .inner p em {
+      color: rgba(0, 0, 0, 1);
+      font-style: normal;
+    }
 
-.inner section
-{
-	margin:100px auto;
-}
+    .inner section {
+      margin: 100px auto;
+    }
 
-ul
-{
-	list-style-type:none;
-	margin-top:-10px;
-	max-width:570px;
-	padding:0;
-}
+    ul {
+      list-style-type: none;
+      margin-top: -10px;
+      max-width: 570px;
+      padding: 0;
+    }
 
-.skill-set li
-{
-	background:rgba(0,0,0,.75);
-	border-radius:5px;
-	color:#FFF;
-	display:inline-block;
-	list-style:none;
-	margin:15px 15px 0 0;
-	padding:10px;
-	text-align:justify;
-}
+    .skill-set li {
+      background: rgba(0, 0, 0, .75);
+      border-radius: 5px;
+      color: #FFF;
+      display: inline-block;
+      list-style: none;
+      margin: 15px 15px 0 0;
+      padding: 10px;
+      text-align: justify;
+    }
 
-@media screen and (max-width: 48em) {
-	.right,.left
-	{
-		float:none;
-    position:relative !important;
-		width:100%;
-    min-height:500px;
-	}
-  .handmade {
-  text-align:center !important;
-  margin-top:0px !important;
-}
+    @media screen and (max-width: 48em) {
 
-@media screen and (max-width: 75em) {
-    body
-{ font-size:16px;}
-}
+      .right,
+      .left {
+        float: none;
+        position: relative !important;
+        width: 100%;
+        min-height: 500px;
+      }
 
-@media screen and (max-width: 60em) {
-    body
-{ font-size:14px;}
-}
-.clearfix:after {
-   content: " "; /* Older browser do not support empty content */
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
-}
+      .handmade {
+        text-align: center !important;
+        margin-top: 0px !important;
+      }
 
-.handmade {
-  text-align:right;
-  margin-top:100px;
-  color: #cccccc;
-}
-.handmade em {
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 1em;
-  margin-left:5px;
-  color: #cccccc;
-}
-    </style>
+      @media screen and (max-width: 75em) {
+        body {
+          font-size: 16px;
+        }
+      }
+
+      @media screen and (max-width: 60em) {
+        body {
+          font-size: 14px;
+        }
+      }
+
+      .clearfix:after {
+        content: " ";
+        /* Older browser do not support empty content */
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+      }
+
+      .handmade {
+        text-align: right;
+        margin-top: 100px;
+        color: #cccccc;
+      }
+
+      .handmade em {
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 1em;
+        margin-left: 5px;
+        color: #cccccc;
+      }
+  </style>
 </head>
-<body>
-    <div class="wrapper clearfix">
-        <div class="left">
-		<div class="name-hero">
-			<div class="me-img"><!-- <img src="pic.PNG" alt="Wenjin"> -->
-			</div>
-			<div class="name-text">
-				<h1>Wenjin <em>Liu</em></h1>
-				<p>3601 Market St, Philadelphia, PA 19104</p>
-				<p>wenjinl@upenn.edu</p>
-				<p>(215)730-7051</p>
-			</div>
-		</div>
-	</div>
-        <div class="right">
-		<div class="inner">
-			<section>
-          			<h1>Education</h1>
-				<p> <em>University of Pennsylvania |</em> MS(c) in Social Policy + Data Analytics&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Sep 2022 - Present</p>
-          			<p>GPA&emsp;4.0/4.0&nbsp;&nbsp;|&nbsp;&nbsp;Vice President of Communication @SP2 Student Government</p>
-         	 		<p>Data Analytics: <be>
-            			Applied Linear Modeling (R) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Applied Machine Learning (Python) <br>Big Data Analysis (Python/SQL/Spark)&nbsp;&nbsp;&nbsp;&nbsp; Practical Programming for Data Science (Python)<br>Community Mapping (ArcGIS)</p>
-          			<hr class="dashed-line">
-          			<p> <em>University of Oxford |</em> Machine Learning Summer School &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;May 2023 - Jul 2023</p>
-          			<p>ML x Fundamentals & Cases&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ML x Finance&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ML x Health</p>
-          			<hr class="dashed-line">
-          			<p> <em>University of Chinese Academy of Science </em> <br>MEng(c) in Industrial Engineering and Operations Research&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Sep 2021 - Jun 2022</p>
-          			<p>GPA&emsp;3.7/4.0</p>
-          			<p>Operations Research &emsp;&emsp;&emsp;Robust Optimization&emsp;&emsp;&emsp;System Modeling and Simulation<br>Decision Analysis &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;Statistical Analysis&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;Data Analysis and Optimization Modeling</p>
-       	 		</section>
-      			<section>
-        			<h1>Technical Skills</h1>
-        			<ul class="skill-set">
-					<li>Python</li>
-          				<li>R</li>
-         				<li>SQL</li>
-					<li>Stata/SPSS</li>
-					<li>Matlab</li>
-          				<li>Tableau</li>
-					<li>Latex</li>
-					<li>ArcGIS</li>
-					<li>Vensim</li>
-					<li>AnyLogic</li>
-					<li>Advanced Microsoft Excel/ PowerPoint/ Power BI</li>
-        			</ul>
-      			</section>
-      			<section>
-        			<h1>References</h1>
-        			<p>xxxx | <em>xxxx | xxxx</em></p>
-        			<p>(123)456-7890 | xxx@xxx.com</p>
-      			</section>
-      			<section>
-        			<h1>Personal Interests</h1>
-        			<ul class="skill-set">
-          				<li>Emergency Management</li>
-					<li>Public Governance</li>
-					<li>Data-drive Policy Analysis</li>
-        			</ul>
-      			</section>
-      			<section>
-        			<div class="handmade">
-          				<p>&copy; 2023 <em> Wenjin Liu - Content created by Wenjin Liu</em></p>
-					<p>Website built using code by Anthony Adamski, licensed under MIT License</p>
-        			</div>
-      			</section>
-    		</div>
 
-  	</div>
+<body>
+  <div class="wrapper clearfix">
+    <div class="left">
+      <div class="name-hero">
+        <div class="me-img"><!--<img src="https://wrisenergy.org/wp-content/uploads/2019/06/Professional-headshot-square-300x300.jpg" alt="Wenjin">-->
+        </div>
+        <div class="name-text">
+          <h1>Wenjin <em>Liu</em></h1>
+          <p>3601 Market St, Philadelphia, PA 19104</p>
+          <p>wenjinl@upenn.edu</p>
+          <p>(215)730-7051</p>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="inner">
+        <section>
+          <h1>About Me</h1>
+				  <p> Hey there! Welcome to my world!<br><br>This is Wenjin Liu, I'm currently pursuing a Master's degree at the University of Pennsylvania, where my focus is on emergency management and public governance, particularly interested in how data can be harnessed to drive effective policy analysis, shaping robust and impactful strategies.
+<br>
+<br>
+In the professional sphere, my ambition is to channel these interests into a career in strategy and management consulting. I'm passionate about leveraging data and analytical insights to guide decision-making, solve complex problems, and help organizations achieve their goals.
+          <br>
+          <br>
+          Feel free to contact me! I'm all ears for new ideas, exciting collaborations, or just a friendly chat. Who knows, our conversation could be the start of something incredible.
+          </p>
+        <section>
+        <section>
+          <h1>Personal Interests</h1>
+          <ul class="skill-set">
+            <li>Emergency Management</li>
+            <li>Public Governance</li>
+            <li>Data-drive Policy Analysis</li>
+          </ul>
+        </section>
+        <section>
+          <h1>Education</h1>
+				  <p> <em>University of Pennsylvania |</em> MS(c) in Social Policy + Data Analytics&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Sep 2022 - Present</p>
+          <p>GPA&emsp;4.0/4.0&nbsp;&nbsp;|&nbsp;&nbsp;Vice President of Communication @SP2 Student Government</p>
+          <p>Data Analytics: <br>
+            Applied Linear Modeling (R) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Applied Machine Learning (Python) <br>Big Data Analysis (Python/SQL/Spark)&nbsp;&nbsp;&nbsp;&nbsp; Practical Programming for Data Science (Python)<br>Community Mapping (ArcGIS)</p>
+          <hr class="dashed-line">
+          <p> <em>University of Oxford |</em> Machine Learning Summer School &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;May 2023 - Jul 2023</p>
+          <p>ML x Fundamentals & Cases&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ML x Finance&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ML x Health</p>
+          <hr class="dashed-line">
+          <p> <em>University of Chinese Academy of Science </em> <br>MEng(c) in Industrial Engineering and Operations Research&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Sep 2021 - Jun 2022</p>
+          <p>GPA&emsp;3.7/4.0</p>
+          <p>Operations Research &emsp;&emsp;&emsp;Robust Optimization&emsp;&emsp;&emsp;System Modeling and Simulation<br>Decision Analysis &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;Statistical Analysis&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;Data Analysis and Optimization Modeling</p>
+        </section>
+        <section>
+          <h1>Technical Skills</h1>
+          <ul class="skill-set">
+            <li>Python</li>
+            <li>R</li>
+            <li>SQL</li>
+            <li>Stata/SPSS</li>
+            <li>Matlab</li>
+            <li>Tableau</li>
+            <li>Latex</li>
+            <li>ArcGIS</li>
+            <li>Vensim</li>
+            <li>AnyLogic</li>
+            <li>Advanced Microsoft Excel/ PowerPoint/ Power BI</li>
+          </ul>
+        </section>
+        <section>
+          <h1>Experience</h1>
+          <p> <em>Kearney </em> <br>Research Assistant&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;July 2023 - Present</p>
+          <p>&bull;&nbsp;Leveraged critical insights on X industry trends, opportunities, and challenges through desk research<br>
+          &bull;&nbsp;Organized interview summaries and authored reports, enhancing the clarity and value of key findings<br>
+          &bull;&nbsp;Designed presentation decks using ThinkCell, translating complex data into visual insights
+          </p>
+          <hr class="dashed-line">
+          <p> <em>Ipsos China</em> <br>Research Assistant&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;May 2021 - Jun 2022</p>
+          <p>&bull;&nbsp;Contributed to an in-depth user study for X short-video company, with the goal of providing strategic insights to boost the number of high-paying users in the Middle-East<br>
+          &bull;&nbsp;Investigated user behavior, consumption patterns, and feedback to uncover the main features and needs of high-paying users<br>
+          &bull;&nbsp;Supported the development and execution of qualitative research methods, collecting detailed information about user behavior and preferences through interviews
+          </p>
+          <hr class="dashed-line">
+  <p> <em>Penn Biotech Group</em> <br>Research Assistant&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Sep 2021 - Mar 2023</p>
+          <p>&bull;&nbsp;Collaborated in a US EHR software company's local expansion by assessing market scale, competitors, and techniques, yielding insights to refine the company's differentiation<br>
+          &bull;&nbsp;Evaluated main competitors in the US through a SWOT analysis, concentrating on platform attributes, compatibility, and interoperability<br>
+          &bull;&nbsp;Developed presentation slides, compiled three versions of expert interview question drafts, and composed weekly reports
+          </p>
+        </section>
+        <section>
+          <h1>Languages</h1>
+          <ul class="skill-set">
+            <li>Chinese - Native Proficiency</li>
+            <li>English - Professional Working Proficiency</li>
+            <li>French - Elementary Proficiency</li>
+          </ul>
+        </section>
+        <section>
+          <h1>Awards</h1>
+          <p>Merit Student 2022 & 2019</p>
+          <p>Excellent League Member 2021 & 2018</p>
+          <p>Outstanding Graduate Student of the Province 2021
+          <p>Excellent Student Cadre 2020</p>
+        </section>
+        <section>
+          <div class="handmade">
+            <p>&copy; 2023 <em> Wenjin Liu - Content created by Wenjin Liu</em></p>
+            <p>Website built using code by Anthony Adamski, licensed under MIT License</p>
+          </div>
+        </section>
+      </div>
 
     </div>
+
+  </div>
 </body>
+
 </html>
